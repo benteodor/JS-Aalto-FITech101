@@ -41,3 +41,29 @@ const greet = (name) => {
 };
 
 greet("Teodor");
+
+// Returning a value from a function
+
+const greeting = (who = "Popa Teodor") => {
+  return `Hi ${who}!`;
+};
+
+const output = greeting("Teo");
+console.log(output);
+
+// Conditional Statements and Loops
+
+let a = "10";
+let b = "20";
+
+if (a === b) {
+  console.log("The same");
+} else {
+  console.log("Not the same");
+}
+a = "20";
+if (a === b) {
+  console.log("The same");
+} else {
+  console.log("Not the same");
+}
