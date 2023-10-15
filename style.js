@@ -67,3 +67,41 @@ if (a === b) {
 } else {
   console.log("Not the same");
 }
+
+// Loops
+//For
+
+for (let i = 0; i < 7; i++) {
+  console.log(i);
+}
+
+//While
+
+let i = 0;
+while (true) {
+  if (i >= 7) {
+    break;
+  }
+  console.log(i);
+  i++;
+}
+
+// Defining and accessing an array
+
+/*const array = ["One", "Two"];
+console.log(array);
+console.log(array[0]);
+console.log(array[1]);*/
+
+// Adding and removing content
+
+const array = [];
+array.push("One");
+array.push("Two");
+array.push("Three");
+console.log(array);
+const shifted = array.shift();
+console.log(array);
+const popped = array.pop();
+console.log(array);
+console.log(`removed: ${shifted}, ${popped}`);
