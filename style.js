@@ -151,3 +151,28 @@ queue.enqueue("third");
 while (!queue.isEmpty()) {
   console.log(queue.dequeue());
 }
+
+// Maps
+
+const translations = new Map();
+translations.set("yksi", "one");
+translations.set("kaksi", "two");
+translations.set("kolme", "three");
+console.log(translations.has("neljä"));
+translations.set("neljä", "four");
+console.log(translations.has("neljä"));
+translations.delete("yksi");
+console.log(translations);
+console.log(translations.get("kaksi"));
+console.log(translations.get("two"));
+
+// Sets
+const uniques = new Set();
+uniques.add("one");
+uniques.add("two");
+uniques.add("two");
+uniques.add("two");
+console.log(uniques);
+uniques.delete("two");
+console.log(uniques);
+console.log(uniques.has("two"));
