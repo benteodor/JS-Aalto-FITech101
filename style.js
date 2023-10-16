@@ -95,7 +95,7 @@ console.log(array[1]);*/
 
 // Adding and removing content
 
-const array = [];
+/*const array = [];
 array.push("One");
 array.push("Two");
 array.push("Three");
@@ -104,4 +104,50 @@ const shifted = array.shift();
 console.log(array);
 const popped = array.pop();
 console.log(array);
-console.log(`removed: ${shifted}, ${popped}`);
+console.log(`removed: ${shifted}, ${popped}`);*/
+
+// Iterating over an array
+/*const array = ["One", "Two", "Three"];
+for (let i = 0; i < array.length; i++) {
+  console.log(array[i]);
+}
+console.log("---");
+for (const value of array) {
+  console.log(value);
+}*/
+
+/*const array = ["One", "Two", "Three"];
+const log = (value) => {
+  console.log(value);
+};
+array.forEach(log);*/
+
+const array = ["One", "Two", "Three"];
+array.forEach((value) => {
+  console.log(value);
+});
+
+// Accessing an array from a separate file
+
+/*const list = [];
+const dequeue = () => {
+  if (isEmpty()) {
+    return null;
+  }
+  return list.shift();
+};
+const enqueue = (element) => {
+  return list.push(element);
+};
+const isEmpty = () => {
+  return list.length === 0;
+};
+export { dequeue, enqueue, isEmpty };*/
+
+import * as queue from "./queue.js";
+queue.enqueue("first");
+queue.enqueue("second");
+queue.enqueue("third");
+while (!queue.isEmpty()) {
+  console.log(queue.dequeue());
+}
