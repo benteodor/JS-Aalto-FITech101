@@ -192,3 +192,34 @@ countries.add("Sweden");
 for (const value of countries) {
   console.log(value);
 }
+
+// Defining an object
+// Adding a property
+
+const person = {
+  name: "Teodor Popa",
+  yearOfBirth: 1996,
+};
+person.inventorOf = "Mocha";
+console.log(person.name);
+console.log(person["name"]);
+console.log(person["year-of-birth"]);
+console.log(person.inventorOf);
+
+// Iterating over properties
+
+const person = {
+  name: "Teodor P",
+  yearOfBirth: 1961,
+};
+for (const [key, value] of Object.entries(person)) {
+  console.log(`${key}: ${value}`);
+}
+
+// JSON and objects
+
+const jsonString = '{"name": "Teodor", "yearOfBirth": 1996}';
+const obj = JSON.parse(jsonString);
+console.log(obj.name);
+const string = JSON.stringify(obj);
+console.log(string);
