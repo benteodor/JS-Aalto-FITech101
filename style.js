@@ -234,3 +234,16 @@ const waitAndPrint = async (message, seconds) => {
 waitAndPrint("First call!", 3);
 waitAndPrint("Second call!", 2);
 waitAndPrint("Third call!", 1);
+
+// Promises and callbacks
+
+const simulatedHeavyCalculation = () => {
+  return new Promise((resolve) => setTimeout(resolve, Math.random() * 100));
+};
+const logMessage = (message) => {
+  simulatedHeavyCalculation().then(() => {
+    console.log(message);
+  });
+};
+logMessage("Hello world!");
+logMessage("Hello world again!");
