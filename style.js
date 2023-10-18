@@ -235,13 +235,26 @@ waitAndPrint("First call!", 3);
 waitAndPrint("Second call!", 2);
 waitAndPrint("Third call!", 1);
 
-// Promises and callbacks
+// Promises
 
-const simulatedHeavyCalculation = () => {
+/*const simulatedHeavyCalculation = () => {
   return new Promise((resolve) => setTimeout(resolve, Math.random() * 100));
 };
 const logMessage = (message) => {
   simulatedHeavyCalculation().then(() => {
+    console.log(message);
+  });
+};
+logMessage("Hello world!");
+logMessage("Hello world again!");*/
+
+// Callbacks
+
+const simulatedHeavyCalculation = (callback) => {
+  setTimeout(callback, Math.random() * 100);
+};
+const logMessage = (message) => {
+  simulatedHeavyCalculation(() => {
     console.log(message);
   });
 };
