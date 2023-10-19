@@ -260,3 +260,13 @@ const logMessage = (message) => {
 };
 logMessage("Hello world!");
 logMessage("Hello world again!");
+
+// Importing external functions
+
+/*const hello = () => {
+  console.log("Hello external function!");
+};
+export { hello };*/
+
+import { hello } from "https://raw.githubusercontent.com/FITech101/simplejs/main/fun-code.js";
+hello();
