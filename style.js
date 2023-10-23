@@ -237,13 +237,26 @@ waitAndPrint("Third call!", 1);*/
 
 // Waiting for an asynchronous function
 
-const waitAndPrint = async (message, seconds) => {
+/*const waitAndPrint = async (message, seconds) => {
   await new Promise((resolve) => setTimeout(resolve, seconds * 1000));
   console.log(message);
 };
 await waitAndPrint("First call!", 3);
 waitAndPrint("Second call!", 2);
-waitAndPrint("Third call!", 1);
+waitAndPrint("Third call!", 1);*/
+
+// Await within a function
+
+/*const waitAndPrint = async (message, seconds) => {
+  await new Promise((resolve) => setTimeout(resolve, seconds * 1000));
+  console.log(message);
+};
+const example = () => {
+  await waitAndPrint("First call!", 3);
+  await waitAndPrint("Second call!", 2);
+  await waitAndPrint("Third call!", 1);
+};
+example();*/
 
 // Promises
 
