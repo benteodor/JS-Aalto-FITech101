@@ -258,6 +258,18 @@ const example = () => {
 };
 example();*/
 
+// Function execution order
+
+/*const simulatedHeavyCalculation = async () => {
+  await new Promise((resolve) => setTimeout(resolve, Math.random() * 100));
+};
+const logMessage = async (message) => {
+  await simulatedHeavyCalculation();
+  console.log(message);
+};
+logMessage("Hello world!");
+logMessage("Hello world again!");*/
+
 // Promises
 
 /*const simulatedHeavyCalculation = () => {
