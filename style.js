@@ -272,7 +272,7 @@ logMessage("Hello world again!");*/
 
 // Promises
 
-/*const simulatedHeavyCalculation = () => {
+const simulatedHeavyCalculation = () => {
   return new Promise((resolve) => setTimeout(resolve, Math.random() * 100));
 };
 const logMessage = (message) => {
@@ -281,11 +281,11 @@ const logMessage = (message) => {
   });
 };
 logMessage("Hello world!");
-logMessage("Hello world again!");*/
+logMessage("Hello world again!");
 
 // Callbacks
 
-const simulatedHeavyCalculation = (callback) => {
+/*const simulatedHeavyCalculation = (callback) => {
   setTimeout(callback, Math.random() * 100);
 };
 const logMessage = (message) => {
@@ -294,7 +294,7 @@ const logMessage = (message) => {
   });
 };
 logMessage("Hello world!");
-logMessage("Hello world again!");
+logMessage("Hello world again!");*/
 
 // Importing external functions
 
